@@ -5,6 +5,7 @@ import FloatingDiv from "../FloatingDiv/FloatingDiv";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from '@mui/icons-material/Twitter';
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
 import thumbup from "../../img/thumbup.png";
@@ -27,6 +28,9 @@ const Intro = () => {
         <div className="i-icons">
           <a href="https://github.com/CodeJude">
             <GitHubIcon style={{ fontSize: 100, color: "var(--green)" }} />
+          </a>
+          <a href="https://twitter.com/JudeVector">
+            <TwitterIcon style={{ fontSize: 100, color: "var(--green)" }} />
           </a>
           <a href="https://www.linkedin.com/in/judendubuisi/">
             <LinkedInIcon style={{ fontSize: 100, color: "var(--green)" }} />
