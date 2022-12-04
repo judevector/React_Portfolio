@@ -4,14 +4,20 @@ import Card from "../Card/Card";
 import HeartEmoji from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
+import {themeContext} from '../../Context';
+import { useContext } from "react";
 
 
 const Services = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
+
   return (
     <div className="services">
       {/* left side */}
       <div className="awesome">
-        <span>My Awesome</span>
+        <span style={{color: darkMode? 'white': ''}}>My Awesome</span>
         <span>Services</span>
         <span>
           Am someone who has eyes for details in everything i do,

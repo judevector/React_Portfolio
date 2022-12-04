@@ -12,13 +12,20 @@ import thumbup from "../../img/thumbup.png";
 import Crown from "../../img/crown.png";
 import glassesemoji from "../../img/glassesemoji.png";
 import Photo from "../../img/photo.png";
+import {themeContext} from '../../Context';
+import { useContext } from "react";
 
 const Intro = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
+  
+
   return (
     <div className="intro">
       <div className="i-left">
         <div className="i-name">
-          <span>Hi! I Am</span>
+          <span style={{color: darkMode? 'white': ''}} >Hi! I Am</span>
           <span>Jude Ndubuisi</span>
           <span>
           Frontend Developer | React | JavaScript | Python Enthusiast | Focused on Building One Solution At A Time Using Code.

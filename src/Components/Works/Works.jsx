@@ -5,13 +5,18 @@ import ReactLogo from '../../img/react-logo.png'
 import NodeJs from '../../img/nodejs-logo.png'
 import Javascript from '../../img/javascript-logo.png'
 import MongoDB from '../../img/mongodb-logo.png'
+import {themeContext} from '../../Context';
+import { useContext } from "react";
 
 
 const Works = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className="works">
         <div className="awesome">
-        <span>Tech Stacks Used</span>
+        <span style={{color: darkMode? 'white': ''}}>Tech Stacks Used</span>
         <span>Frontend & Backend</span>
         <span>
           Am someone who has eyes for details in everything i do,
