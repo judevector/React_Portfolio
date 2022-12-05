@@ -7,9 +7,12 @@ import Javascript from '../../img/javascript-logo.png'
 import MongoDB from '../../img/mongodb-logo.png'
 import {themeContext} from '../../Context';
 import { useContext } from "react";
+import { motion } from 'framer-motion'
 
 
 const Works = () => {
+  const transition = {duration: 3.5, type: 'spring'}
+
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
@@ -28,7 +31,13 @@ const Works = () => {
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       <div className="w-right">
-        <div className="w-mainCircle">
+        <motion.div
+        initial={{transform: 'rotate(45deg)'}}
+        whileInView={{transform: 'rotate(0deg)'}}
+        transition={transition}
+        viewport={{margin: '-40px'}}
+        
+         className="w-mainCircle">
             <div className="w-secCircle">
                 <img src={Python} alt="" />
             </div>
@@ -44,7 +53,7 @@ const Works = () => {
             <div className="w-secCircle">
                 <img src={Javascript} alt="" />
             </div>
-        </div>
+        </motion.div>
         {/* background Circles */}
         <div className="w-backCircle blueCircle"></div>
         <div className="w-backCircle yellowCircle"></div>

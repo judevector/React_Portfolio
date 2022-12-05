@@ -15,7 +15,7 @@ const Portfolio = () => {
 
 
   return (
-    <div className="portfolio">
+    <div className="portfolio" id='Portfolio'>
 
         {/* Project heading */}
         <span style={{color: darkMode? 'white': ''}}>Recent Projects</span>

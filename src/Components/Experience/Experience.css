@@ -38,6 +38,12 @@
     position: absolute;
     z-index: -1;
 }
+@media screen and (max-width: 480px) {
+    .experience{
+       gap: 2rem;
+       transform: scale(0.8);
+    }
+}
 
 .achievement span:nth-of-type(2){
     color: #88ff5c;

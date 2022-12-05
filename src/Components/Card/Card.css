@@ -31,6 +31,13 @@
     box-shadow: 0px 19px 60px rgba(0, 0, 0, 0.08);
     border-radius: 7px;
     border: none;
+    padding: 10px;
     font-size: 16px;
     color: var(--green);
+}
+
+@media screen and (max-width: 480px) {
+    .card{
+        width: auto;
+    }
 }
