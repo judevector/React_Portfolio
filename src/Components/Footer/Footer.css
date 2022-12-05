@@ -25,6 +25,23 @@
 }
 
 .copyright{
-    z-index: 1;
-    margin-bottom: -10rem;
+    z-index: 1; 
+      
+}
+
+@media screen and (max-width: 480px) {
+    .f-icons{
+       transform: scale(0.5);
+       margin-top: -3rem;
+       width: 20rem;
+       gap: 3rem;
+
+    }
+    .copyright{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0.7);
+        
+    }
 }

@@ -55,7 +55,7 @@ const Services = () => {
           <Card
             emoji={Glasses}
             heading={"Developer"}
-            detail={"HTML, CSS, Javascript, React, Python"}
+            detail={"HTML, CSS, Javascript, React, Python, NodeJs"}
           />
         </div>
         {/* third card */}
@@ -68,7 +68,7 @@ const Services = () => {
             <Card
             emoji={Humble}
             heading={"UI/UX"}
-            detail={"Beautiful Design guarrenteed anyday"}
+            detail={"Beautiful Design guarrenteed anyday, Always willing to deliver top notch designs"}
              />
         </motion.div>
         <div className="blur s-blur2" style={{background: "var(--purple)"}} ></div>
