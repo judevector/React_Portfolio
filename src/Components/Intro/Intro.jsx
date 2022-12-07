@@ -16,6 +16,7 @@ import { themeContext } from "../../Context";
 import { useContext } from "react";
 import { motion } from "framer-motion";
 
+
 const Intro = () => {
   const transition = { duration: 2, type: "spring" };
 
@@ -32,7 +33,9 @@ const Intro = () => {
             Focused on Building One Solution At A Time Using Code.
           </span>
         </div>
-        <button className="button i-button">Hire Me</button>
+        <a href="mailto:ikechukwujudendubuisi@gmail.com">
+            <button className="button i-button">Hire Me</button>
+        </a>
         <div className="i-icons">
           <a href="https://github.com/CodeJude">
             <GitHubIcon style={{ fontSize: 100, color: "var(--green)" }} />

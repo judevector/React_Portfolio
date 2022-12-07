@@ -31,9 +31,11 @@ const Navbar = () => {
                     </Link>   
                 </ul>
             </div>
+            <a href="mailto:ikechukwujudendubuisi@gmail.com">
             <button className="button n-button">
                 Contact
             </button>
+            </a>  
         </div>
     </div>
   )

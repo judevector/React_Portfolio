@@ -27,7 +27,9 @@ const Works = () => {
           <br /> player and can also work on projects alone if need be, <br /> I
           love learning new things everyday, one thing is I never say NEVER.
         </span>
+        <a href="mailto:ikechukwujudendubuisi@gmail.com">
         <button className="button s-button">Hire Me</button>
+        </a>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       <div className="w-right">
