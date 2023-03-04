@@ -1,15 +1,15 @@
-.works{
+.works {
     padding: 0 3rem 0 3rem;
     display: flex;
     height: 90vh;
     margin-top: 4rem;
 }
 
-.w-right{
+.w-right {
     position: relative;
 }
 
-.w-mainCircle{
+.w-mainCircle {
     left: 9rem;
     position: relative;
     width: 18rem;
@@ -20,40 +20,35 @@
     background: white;
 }
 
-.w-mainCircle>*{
+.w-mainCircle>* {
     position: absolute;
 }
 
-.w-mainCircle > :nth-child(1)
-{
+.w-mainCircle> :nth-child(1) {
     top: -3.5rem;
     left: 4.5rem;
-    transform: scale(0.5);  
+    transform: scale(0.5);
 }
 
-.w-mainCircle > :nth-child(2)
-{
+.w-mainCircle> :nth-child(2) {
     top: 5rem;
     left: -4rem;
     transform: scale(0.5);
 }
 
-.w-mainCircle > :nth-child(3)
-{
+.w-mainCircle> :nth-child(3) {
     top: 5rem;
     left: 4.5rem;
     transform: scale(0.5)
 }
 
-.w-mainCircle > :nth-child(4)
-{
+.w-mainCircle> :nth-child(4) {
     top: 4rem;
     left: 13rem;
     transform: scale(0.5);
 }
 
-.w-mainCircle > :nth-child(5)
-{
+.w-mainCircle> :nth-child(5) {
     top: 13rem;
     left: 4.5rem;
     transform: scale(0.5);
@@ -78,9 +73,9 @@
     width: 200px;
     height: 120px;
 } */
-.w-secCircle > img{
+.w-secCircle>img {
     width: 100%;
-    height: auto; 
+    height: auto;
 }
 
 .w-backCircle {
@@ -91,35 +86,38 @@
     z-index: -1;
 }
 
-.blueCircle{
+.blueCircle {
     background: #1949B8;
     left: 18rem;
     top: 0rem;
 }
 
-.yellowCircle{
+.yellowCircle {
     background: #F5C32C;
     left: 18rem;
     top: 8rem;
 }
 
 @media screen and (max-width: 480px) {
-    .works{
+    .works {
         flex-direction: column;
         height: 55rem;
         padding: 0;
         gap: 5rem;
     }
-    .w-right{
+
+    .w-right {
         display: flex;
         align-items: flex-start;
-        justify-content: start;
+        justify-content: flex-start;
         transform: scale(0.7);
     }
-    .w-mainCircle{
+
+    .w-mainCircle {
         position: static;
     }
-    .w-backCircle{
-        left: 8rem!important;
+
+    .w-backCircle {
+        left: 8rem !important;
     }
 }
