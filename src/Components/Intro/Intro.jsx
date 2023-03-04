@@ -5,7 +5,7 @@ import FloatingDiv from "../FloatingDiv/FloatingDiv";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
 import thumbup from "../../img/thumbup.png";
@@ -15,7 +15,6 @@ import Photo from "../../img/photo.png";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 import { motion } from "framer-motion";
-
 
 const Intro = () => {
   const transition = { duration: 2, type: "spring" };
@@ -29,12 +28,13 @@ const Intro = () => {
           <span style={{ color: darkMode ? "white" : "" }}>Hi! I Am</span>
           <span>Jude Ndubuisi</span>
           <span>
-            Frontend Developer | React | JavaScript | Python Enthusiast |
-            Focused on Building One Solution At A Time Using Code.
+            Backend Developer | A regular dude breaking into Tech ✌️ | Technical
+            Writer ✍️ | Web3 | Focused on building one solution at a time using
+            Code.
           </span>
         </div>
         <a href="mailto:ikechukwujudendubuisi@gmail.com">
-            <button className="button i-button">Hire Me</button>
+          <button className="button i-button">Hire Me</button>
         </a>
         <div className="i-icons">
           <a href="https://github.com/CodeJude">
@@ -47,7 +47,9 @@ const Intro = () => {
             <LinkedInIcon style={{ fontSize: 100, color: "var(--green)" }} />
           </a>
           <a href="mailto:ikechukwujudendubuisi@gmail.com">
-            <AlternateEmailIcon style={{ fontSize: 100, color: "var(--green)" }} />
+            <AlternateEmailIcon
+              style={{ fontSize: 100, color: "var(--green)" }}
+            />
           </a>
         </div>
       </div>
@@ -69,7 +71,7 @@ const Intro = () => {
           style={{ top: "-4%", left: "68%" }}
           className="floating-div"
         >
-          <FloatingDiv image={Crown} txt1="Web" txt2="Developer" />
+          <FloatingDiv image={Crown} txt1="Backend" txt2="Developer" />
         </motion.div>
         <motion.div
           initial={{ left: "9rem", top: "18rem" }}
@@ -78,7 +80,7 @@ const Intro = () => {
           style={{ top: "18rem", left: "0rem" }}
           className="floating-div"
         >
-          <FloatingDiv image={thumbup} txt1="Best Design" txt2="100%" />
+          <FloatingDiv image={thumbup} txt1="Technical" txt2="Writer" />
         </motion.div>
         {/* blur divs */}
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
